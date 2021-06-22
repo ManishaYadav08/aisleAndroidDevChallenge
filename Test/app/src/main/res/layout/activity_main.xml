@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/get_otp"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Get OTP"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/enter"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+
+            android:text="Enter Your"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_edit_bg"
+            android:text="+91"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_edit_bg"
+            android:hint="9562673169"
+            android:paddingStart="15dp"
+            android:text="9562673169"
+            android:paddingEnd="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+          android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Continue" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
